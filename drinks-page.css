@@ -1,0 +1,162 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;     
+}
+
+body{
+     background-image: url(/images/background.jpg);
+     animation: fade 4s;
+        
+  }
+  h1{
+    font-size: 100px;
+    color: white;
+    margin:2%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Domaine Display', sans-serif;
+    margin-top: 8%;
+    animation-name:spacing;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-direction: normal;
+    animation-play-state:running;
+    
+  }
+
+  h3{
+    font-family: 'Josefin Sans', sans-serif;
+    margin-top: 20px;
+    text-decoration: none;
+    color: white;
+  }
+
+.grid {
+    display:grid;
+    grid-gap: 10px;
+    grid-template-columns: 500px 500px 500px 500px;
+    grid-template-rows:  500px 500px 500px 500px;
+    justify-content: center;
+    margin-top: 70px;
+}
+
+.grid > div {
+    padding: 15px;
+    border-radius: 50%;
+    display:grid;
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    color: white;
+}
+
+.grid>div:hover {
+    padding: 15px;
+    background-color:rgb(180, 117, 28);
+    color: rgb(45, 31, 19);
+    transition-property: background-color height;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0s;
+
+}
+img.coffee-image {
+    display:block;
+    max-height: 300px;
+    max-width: 300px;
+    margin: 0 auto;
+    animation-name:bounce;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-direction: normal;
+    animation-play-state:running;
+    animation-iteration-count: infinite;
+}
+img.coffee-image:hover {
+    animation-play-state: paused;
+}
+@keyframes spacing {
+    0%{
+        opacity: 0;
+    }
+    30%{
+        letter-spacing: 25px;
+    }
+    85%{
+        letter-spacing: 8px;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+}
+@keyframes bounce {
+   20%, 50%, 80%, to{
+        transform: translateY(0);
+   }
+   40%{
+         transform: translateY(-20px);
+   }
+   70%{
+    transform: translateY(-10px);
+   }
+   90%{
+    transform: translateY(-2px);
+   }
+}
+
+#logo{
+    position: fixed;
+    top:15px;
+    left:20px;
+}
+
+@media screen and (max-width: 768px) {
+
+.grid{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 800px;
+    margin-top: 175%;
+    margin-left: 25%;
+
+}
+.grid > div{
+    padding: 10px;
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    margin-left: 5%;
+}
+img.coffee-image{
+    max-height: 175px;
+    max-width: 175px;
+    margin-bottom: 15px;
+    padding:15px;
+    align-items: center;
+}
+h1{
+    text-align: center;
+    justify-content: center;
+    margin-top: 25%;
+}
+#logo{
+    position:absolute;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+}

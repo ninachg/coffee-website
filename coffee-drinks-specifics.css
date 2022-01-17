@@ -1,0 +1,266 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;     
+}
+body{
+    background-image: url(/images/background.jpg);
+}
+div{
+    display: flex;
+}
+h1{
+    text-align: center;
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 100px;
+    margin-top: 12%;
+    animation-name:fadein;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-direction: normal;
+    animation-play-state:running;
+    font-family: 'Domaine Display', sans-serif;
+    animation-name:spacing;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-direction: normal;
+    animation-play-state:running;
+    
+}
+.column {
+    display: flex;
+
+}
+.flexbox-coffee-container {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    align-items: center;
+    margin:auto;
+    animation-name:fadein ;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-direction: normal;
+   
+}
+.flexbox-coffee-item-1{
+    width: 700px;
+    height: 700px;
+    justify-content: center;
+    align-items: center;
+    animation-name:bounce;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-direction: normal;
+    animation-play-state:running;
+    animation-iteration-count: infinite;
+    
+}
+
+.flexbox-coffee-item-2{
+    width: 700px;
+    height: 700px;
+    font-family: 'Josefin Sans', sans-serif;
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    display: flex;
+
+  
+
+}
+ul{
+    text-align: left;
+    margin: 5px;
+    font-size: 50px;
+    align-items: center;
+}
+img.coffee-image {
+    display:block;
+    max-height: 300px;
+    max-width: 300px;
+    margin: 0 auto;
+    margin-top: 20px;
+    
+    
+}
+.slide-right {
+    width: 100%;
+    overflow: hidden;
+    margin-left: 10px;
+    margin-top: 120px;
+    max-width: 700px
+ }
+ 
+ .slide-right ul {
+    animation: 5s slide-right;
+ }
+
+ .back-button-container {
+    display: flex;
+    justify-content: center;
+    bottom:15%;
+    left:50%;
+    position: absolute;
+    top: 75%;
+    left: 0;
+    bottom:0;
+    right: 0;
+    animation-name:fadein ;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-direction: normal;
+    margin-bottom: 30%;
+}
+
+.back-button{
+    margin: 50px;
+    font-family: 'Josefin Sans', sans-serif;
+    color: rgb(187,115, 33);
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a{
+    color: rgb(187,115, 33);
+    text-decoration: none;
+
+}
+a:hover{
+    color: white;
+
+}
+
+ @keyframes slide-right {
+     0%{
+        margin-left: -500px;
+        opacity: 0%;
+     }
+ 
+     50%{
+        margin-left: 0%;
+        opacity: 50%;
+     }
+     100%{
+        margin-left: 0%;
+        opacity: 100%;
+     }
+  }
+  @keyframes fadein {
+    0%{
+       opacity: 0%;
+    }
+
+    50%{
+       opacity: 50%;
+    }
+    100%{
+       opacity: 100%;
+    }
+  }
+  @keyframes spacing {
+    0%{
+        opacity: 0;
+    }
+    30%{
+        letter-spacing: 25px;
+    }
+    85%{
+        letter-spacing: 8px;
+    }
+    100% {
+        opacity: 1;
+
+    }
+  }
+
+@keyframes bounce {
+    20%, 50%, 80%, to{
+         transform: translateY(0);
+    }
+    40%{
+          transform: translateY(-20px);
+    }
+    70%{
+     transform: translateY(-10px);
+    }
+    90%{
+     transform: translateY(-2px);
+    }
+ }
+ 
+ #logo{
+    position: fixed;
+    top:15px;
+    left:20px;
+}
+@media screen and (max-width: 768px) {
+    h1{
+        margin-top: 25%;
+        margin-bottom: 5%;
+    }
+    img.coffee-image {
+        max-height: 200px;
+        max-width: 200px;
+    }
+    .flexbox-coffee-item-2{
+        font-family: 'Josefin Sans', sans-serif;
+        color: rgb(255, 255, 255);
+        font-size: 20px;
+        display: flex;
+        margin-left: 15%;
+        margin-top: 0%;
+        margin-bottom: 10%;
+ 
+        /*help*/
+    }
+    #logo{
+        position:fixed;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+    }
+    .back-button-container{
+       position: absolute;
+       margin-top: 60%;
+      
+    }
+    ul{
+       align-items:flex-start;
+    } 
+}
+/**.flexbox-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 80%;
+}
+.flexbox-item{
+    width: 400px;
+    height: 75px;
+    border: 6px solid rgb(187, 115, 33);
+    border-radius: 40px;
+    margin: 50px;
+    font-family: 'Josefin Sans', sans-serif;
+    color: rgb(187,115, 33);
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.flexbox-item:hover{
+    width: 400px;
+    height: 75px;
+    border: 10px solid rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+    border-radius: 40px;
+    margin: 50px; 
+ }
+  
