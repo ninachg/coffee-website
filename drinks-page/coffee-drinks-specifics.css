@@ -6,15 +6,17 @@
 body{
     background-image: url(../images/background.jpg);
 }
-div{
-    display: flex;
+div.container{
+    width: 100vw;
 }
+
 h1{
     text-align: center;
     color: white;
     font-family: 'Josefin Sans', sans-serif;
     font-size: 100px;
     margin-top: 12%;
+    margin-bottom: 50px;
     animation-name:fadein;
     animation-duration: 3s;
     animation-timing-function: linear;
@@ -28,12 +30,9 @@ h1{
     animation-delay: 0s;
     animation-direction: normal;
     animation-play-state:running;
-    
-}
-.column {
-    display: flex;
 
 }
+
 .flexbox-coffee-container {
     display: flex;
     justify-content: center;
@@ -48,8 +47,7 @@ h1{
    
 }
 .flexbox-coffee-item-1{
-    width: 700px;
-    height: 700px;
+    width: 400px;
     justify-content: center;
     align-items: center;
     animation-name:bounce;
@@ -59,12 +57,12 @@ h1{
     animation-direction: normal;
     animation-play-state:running;
     animation-iteration-count: infinite;
+   
     
 }
 
 .flexbox-coffee-item-2{
-    width: 700px;
-    height: 700px;
+    width: 400px;
     font-family: 'Josefin Sans', sans-serif;
     color: rgb(255, 255, 255);
     font-size: 30px;
@@ -75,14 +73,12 @@ h1{
 }
 ul{
     text-align: left;
-    margin: 5px;
     font-size: 50px;
-    align-items: center;
+    align-items:flex-start;
 }
 img.coffee-image {
     display:block;
-    max-height: 300px;
-    max-width: 300px;
+    max-height: 400px;
     margin: 0 auto;
     margin-top: 20px;
     
@@ -103,13 +99,6 @@ img.coffee-image {
  .back-button-container {
     display: flex;
     justify-content: center;
-    bottom:15%;
-    left:50%;
-    position: absolute;
-    top: 75%;
-    left: 0;
-    bottom:0;
-    right: 0;
     animation-name:fadein ;
     animation-duration: 3s;
     animation-timing-function: linear;
@@ -196,71 +185,49 @@ a:hover{
     }
  }
  
- #logo{
-    position: fixed;
+ .logo{
+    position: relative;
     top:15px;
     left:20px;
 }
 @media screen and (max-width: 768px) {
     h1{
-        margin-top: 25%;
-        margin-bottom: 5%;
+        margin-top: 20%;
+        margin-bottom: 10%;
+        font-size: 85px;
+       overflow-wrap:normal ;
     }
     img.coffee-image {
-        max-height: 200px;
-        max-width: 200px;
+        max-height: 300px;
+        max-width: 300px;
+    }
+    .flexbox-coffee-container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .flexbox-coffee-item-1{
+        width: 100%;
     }
     .flexbox-coffee-item-2{
         font-family: 'Josefin Sans', sans-serif;
         color: rgb(255, 255, 255);
         font-size: 20px;
-        display: flex;
-        margin-left: 15%;
-        margin-top: 0%;
-        margin-bottom: 10%;
- 
-        /*help*/
+        width: 500px;
+        height: 400px;
+        position: relative;
+    
+        
+
     }
-    #logo{
-        position:fixed;
+    .logo{
         margin: auto;
         display: flex;
         justify-content: center;
-    }
-    .back-button-container{
-       position: absolute;
-       margin-top: 60%;
-      
     }
     ul{
        align-items:flex-start;
     } 
 }
-/**.flexbox-container {
-    display: flex;
-    justify-content: center;
-    margin-top: 80%;
-}
-.flexbox-item{
-    width: 400px;
-    height: 75px;
-    border: 6px solid rgb(187, 115, 33);
-    border-radius: 40px;
-    margin: 50px;
-    font-family: 'Josefin Sans', sans-serif;
-    color: rgb(187,115, 33);
-    font-size: 30px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.flexbox-item:hover{
-    width: 400px;
-    height: 75px;
-    border: 10px solid rgb(255, 255, 255);
-    color: rgb(255, 255, 255);
-    border-radius: 40px;
-    margin: 50px; 
- }
-  
+
