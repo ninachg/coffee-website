@@ -123,18 +123,17 @@ img.roast-image:hover {
   
 }
 .logo{
-    position: fixed;
+    position: relative;
     top:15px;
-    left:20px;
+    left:15px;
 }
 @media screen and (max-width: 768px) {
 .grid{
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 800px;
-    margin-top: 10%;
-    margin-left: 25%;
+    align-items: center;
 }
 
 .grid > div{
@@ -156,7 +155,7 @@ h1{
    
 }
 .logo{
-    position:absolute;
+    position:relative;
     margin: auto;
     display: flex;
     justify-content: center;
