@@ -197,8 +197,8 @@ a:hover{
 @media screen and (max-width: 768px) {
     div.container{
         display:list-item;
-    justify-content: center;
-    align-items: center;
+        justify-content: center;
+        align-items: center;  
         margin: auto;
         width: 100%;
     }
@@ -241,7 +241,7 @@ a:hover{
         color: rgb(255, 255, 255);
         font-size: 20px;
         width: auto;
-        height: 500px;
+        height: 400px;
         position: relative;
         margin: auto;
     }
@@ -250,7 +250,7 @@ a:hover{
         margin: auto;
         display: flex;
         justify-content: center;
-        width:auto;
+        width:75px;
         left: 0px;
     }
 
