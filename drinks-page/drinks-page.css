@@ -146,11 +146,12 @@ img.coffee-image{
     margin-bottom: 15px;
     padding:15px;
     align-items: center;
+    margin: auto;
 }
 h1{
     text-align: center;
     justify-content: center;
-    margin-top: 25%;
+    margin-top: 20%;
 }
 .logo{
     position:relative;
