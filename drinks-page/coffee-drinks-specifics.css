@@ -62,11 +62,15 @@ h1{
 }
 
 .flexbox-coffee-item-2{
-    width: 400px;
+    width: 500px;
+    height: 500px;
     font-family: 'Josefin Sans', sans-serif;
     color: rgb(255, 255, 255);
     font-size: 30px;
     display: flex;
+    align-items: flex-start;
+    border: 2px white solid;
+    justify-content: flex-start;
 
   
 
@@ -204,6 +208,8 @@ a:hover{
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        
+        
     }
     
     .flexbox-coffee-item-1{
@@ -216,9 +222,9 @@ a:hover{
         width: 500px;
         height: 400px;
         position: relative;
+       
     
-        
-
+    
     }
     .logo{
         margin: auto;
