@@ -208,17 +208,22 @@ a:hover{
         margin-bottom: 10%;
         font-size: 85px;
         width: auto;
+        text-align: center;
+     
 
     }
 
    img.roast-image {
         max-height: 300px;
         max-width: 300px;
+        margin: auto;
+        width: auto;
     }
    
     
     .flexbox-roast-item-1{
         width:auto;
+        margin: auto;
 
     }
     .flexbox-roast-item-2{
@@ -228,6 +233,7 @@ a:hover{
         width: auto;
         height: 500px;
         position: relative;
+        margin: auto;
     }
 
     .logo{
