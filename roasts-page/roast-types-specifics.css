@@ -207,6 +207,8 @@ a:hover{
         margin-top: 20%;
         margin-bottom: 10%;
         font-size: 85px;
+        width: auto;
+
     }
 
    img.roast-image {
@@ -217,12 +219,13 @@ a:hover{
     
     .flexbox-roast-item-1{
         width:auto;
+
     }
     .flexbox-roast-item-2{
         font-family: 'Josefin Sans', sans-serif;
         color: rgb(255, 255, 255);
         font-size: 20px;
-        width: 500px;
+        width: auto;
         height: 500px;
         position: relative;
     }
