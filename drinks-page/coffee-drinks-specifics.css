@@ -198,50 +198,58 @@ a:hover{
     left:20px;
 }
 @media screen and (max-width: 768px) {
-    h1{
-        margin: auto
+    
+.flexbox-coffee-container {
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     margin: auto;
+     width: 100%;
     }
+
+    h1{
+        margin-top: 20%;
+        margin-bottom: 10%;
+        font-size: 75px;
+        width: auto;
+        text-align: center;
+    }
+    
+    ul{
+        font-size: 45px;
+        align-items: center;
+    } 
+
     img.coffee-image {
         max-height: 300px;
         max-width: 300px;
-    }
-    .flexbox-coffee-container {
-        flex-direction: column;
-        display:list-item;
-        justify-content: center;
-        align-items: center;
         margin: auto;
-        width: 100%;
-        
+        width: auto;
     }
     
     .flexbox-coffee-item-1{
-        width: 100%;
-        margin-top: 10%;
+        width:auto;
+        margin: auto;
     }
+    
     .flexbox-coffee-item-2{
         font-family: 'Josefin Sans', sans-serif;
         color: rgb(255, 255, 255);
         font-size: 20px;
+        width: auto;
         height: auto;
-        width: 400px;
-        margin:auto;
+        position: relative;
+        margin: auto;
     }
-
-    ul{
-        font-size: 50px;
-        align-items:flex-start;
-        
-    }
-
+   
     .logo{
         margin: auto;
-        margin-bottom: 15%;
         display: flex;
         justify-content: center;
+        width:75px;
+        left: 0px;
     }
-    ul{
-       align-items:flex-start;
-    } 
+
+
 }
 

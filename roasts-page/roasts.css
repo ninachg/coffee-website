@@ -134,6 +134,7 @@ img.roast-image:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: auto;
 }
 
 .grid > div{
@@ -151,15 +152,16 @@ img.roast-image{
 h1{
     text-align: center;
     justify-content: center;
+    font-size: 90px;
     margin-top: 25%;
    
 }
 .logo{
-    position:relative;
     margin: auto;
     display: flex;
     justify-content: center;
-    
+    width:75px;
+    left: 0px;
 }
 }
 
