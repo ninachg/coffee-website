@@ -241,7 +241,7 @@ a:hover{
         color: rgb(255, 255, 255);
         font-size: 20px;
         width: auto;
-        height: 400px;
+        height: auto;
         position: relative;
         margin: auto;
     }
