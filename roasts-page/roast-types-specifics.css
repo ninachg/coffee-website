@@ -195,7 +195,11 @@ a:hover{
     left:20px;
 }
 @media screen and (max-width: 768px) {
-  .flexbox-roast-container {
+    div.container{
+        margin: auto;
+        width: 100%;
+    }
+    .flexbox-roast-container {
         flex-direction: column;
         align-items: center;
         justify-content: center;
