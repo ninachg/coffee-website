@@ -37,8 +37,8 @@ body{
 .grid {
     display:grid;
     grid-gap: 10px;
-    grid-template-columns: 500px 500px 500px 500px;
-    grid-template-rows:  500px 500px 500px 500px;
+    grid-template-columns: 400px 400px 400px 400px;
+    grid-template-rows:  400px 400px 400px 400px;
     justify-content: center;
     margin-top: 70px;
 }
@@ -66,8 +66,7 @@ body{
 }
 img.coffee-image {
     display:block;
-    max-height: 300px;
-    max-width: 300px;
+    max-height: 250px;
     margin: 0 auto;
     animation-name:bounce;
     animation-duration: 2s;
@@ -123,6 +122,9 @@ img.coffee-image:hover {
     left:20px;
 }
 
+.logo img{
+    max-width:175px;
+}
 @media screen and (max-width: 768px) {
 
 .grid{
@@ -152,6 +154,7 @@ h1{
     text-align: center;
     justify-content: center;
     margin-top: 20%;
+    font-size:50px;
 }
 .logo{
     position:relative;

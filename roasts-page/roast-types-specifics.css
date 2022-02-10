@@ -194,6 +194,11 @@ a:hover{
     top:15px;
     left:20px;
 }
+
+.logo img{
+    max-width:175px;
+}
+
 @media screen and (max-width: 768px) {
     div.container{
         display:list-item;
@@ -213,7 +218,7 @@ a:hover{
     h1{
         margin-top: 20%;
         margin-bottom: 10%;
-        font-size: 75px;
+        font-size: 50px;
         width: auto;
         text-align: center;
     }
@@ -234,8 +239,8 @@ a:hover{
     .flexbox-roast-item-1{
         width:auto;
         margin: auto;
-
     }
+    
     .flexbox-roast-item-2{
         font-family: 'Josefin Sans', sans-serif;
         color: rgb(255, 255, 255);

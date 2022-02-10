@@ -73,7 +73,6 @@ h1{
     justify-content: flex-start;
     margin-left: 5%;
 
-  
 
 }
 ul{
@@ -197,6 +196,10 @@ a:hover{
     top:15px;
     left:20px;
 }
+
+.logo img{
+    max-width:175px;
+}
 @media screen and (max-width: 768px) {
     
 .flexbox-coffee-container {
@@ -210,7 +213,7 @@ a:hover{
     h1{
         margin-top: 20%;
         margin-bottom: 10%;
-        font-size: 75px;
+        font-size: 50px;
         width: auto;
         text-align: center;
     }
@@ -221,8 +224,8 @@ a:hover{
     } 
 
     img.coffee-image {
-        max-height: 300px;
-        max-width: 300px;
+        max-height: 200px;
+        max-width: 200px;
         margin: auto;
         width: auto;
     }
@@ -231,7 +234,7 @@ a:hover{
         width:auto;
         margin: auto;
     }
-    
+
     .flexbox-coffee-item-2{
         font-family: 'Josefin Sans', sans-serif;
         color: rgb(255, 255, 255);
@@ -246,8 +249,12 @@ a:hover{
         margin: auto;
         display: flex;
         justify-content: center;
-        width:75px;
+      
         left: 0px;
+    }
+
+    .logo a img {
+        width: 200px;
     }
 
 
