@@ -5,6 +5,7 @@
 }
 body{
     background-image: url(../images/background.jpg);
+    overflow-y: hidden;
 }
 div.container{
     width: 100vw;
@@ -14,8 +15,9 @@ h1{
     text-align: center;
     color: white;
     font-family: 'Josefin Sans', sans-serif;
-    font-size: 100px;
-    margin-top: 10%;
+    font-size: 80px;
+    margin-top: 8%;
+    margin-bottom: 50px;
     animation-name:fadein;
     animation-duration: 3s;
     animation-timing-function: linear;
@@ -41,20 +43,18 @@ h1{
     justify-content: center;
     flex-flow: row wrap;
     align-items: center;
+    margin:auto;
+    animation-name:fadein ;
     animation-duration: 3s;
     animation-timing-function: linear;
     animation-delay: 0s;
     animation-direction: normal;
-    animation-play-state:running;
-    border: 2px, white, solid;
    
 }
 .flexbox-roast-item-1{
-    width: 500px;
+    width: 350px;
     justify-content: center;
     align-items: center;
-    margin-top: 5%;
-    margin-left: 5px;
     animation-name:bounce;
     animation-duration: 2s;
     animation-timing-function: linear;
@@ -62,31 +62,33 @@ h1{
     animation-direction: normal;
     animation-play-state:running;
     animation-iteration-count: infinite;
-    border: 2px, white, solid;
     
 }
 
 .flexbox-roast-item-2{
-    width: 500px;
+    width: auto;
     font-family: 'Josefin Sans', sans-serif;
     color: rgb(255, 255, 255);
     font-size: 30px;
     display: flex;
-    border: 5px, white, solid;
+    align-items: flex-start;
+    justify-content: flex-start;
 }
 
 ul{
     text-align: left;
-    font-size: 50px;
-    align-items: center;
-    margin-bottom: 5px;
+    font-size: 35px;
+    margin-top: 0px;
+    align-items:flex-start;
+    vertical-align: top;
+    padding:30px;
+    list-style: none;
    
    
 }
 img.roast-image {
     display:block;
-    max-height: 300px;
-    max-width: 300px;
+    max-height: 400px;
     margin: 0 auto;
     margin-top: 20px;
 }
@@ -95,7 +97,6 @@ img.roast-image {
     width: 100%;
     overflow: hidden;
     margin-left: 10px;
-    margin-top: 120px;
     max-width: 700px
  }
  
@@ -111,7 +112,6 @@ img.roast-image {
     animation-timing-function: linear;
     animation-delay: 0s;
     animation-direction: normal;
-    margin-top: 5%;
     margin-bottom: 30%;
 }
 
@@ -119,7 +119,7 @@ img.roast-image {
     margin: 50px;
     font-family: 'Josefin Sans', sans-serif;
     color: rgb(187,115, 33);
-    font-size: 30px;
+    font-size: 28px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -200,63 +200,82 @@ a:hover{
 }
 
 @media screen and (max-width: 768px) {
-    div.container{
-        display:list-item;
-        justify-content: center;
-        align-items: center;  
-        margin: auto;
-        width: 100%;
-    }
-    .flexbox-roast-container {
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        margin: auto;
-        width: 100%;
-    }   
     
     h1{
-        margin-top: 20%;
+        margin-top: 12%;
         margin-bottom: 10%;
-        font-size: 50px;
+        font-size: 60px;
         width: auto;
         text-align: center;
     }
-
+    
     ul{
-        font-size: 45px;
+        font-size: 30px;
         align-items: center;
-    }
+    } 
 
    img.roast-image {
         max-height: 300px;
-        max-width: 300px;
-        margin: auto;
-        width: auto;
     }
    
     
-    .flexbox-roast-item-1{
-        width:auto;
-        margin: auto;
-    }
-    
     .flexbox-roast-item-2{
-        font-family: 'Josefin Sans', sans-serif;
-        color: rgb(255, 255, 255);
         font-size: 20px;
-        width: auto;
-        height: auto;
-        position: relative;
-        margin: auto;
     }
 
     .logo{
         margin: auto;
         display: flex;
         justify-content: center;
-        width:75px;
         left: 0px;
     }
+
+    .logo a img {
+        width: 200px;
+    }
+
+    .back-button {
+        font-size: 25px;
+        margin-top:10%;
+}
+
+@media screen and (max-width: 480px) {
+    .logo img{
+        max-width:150px;
+    }
+
+    h1{
+           margin-top: 15%;
+           font-size:45px;
+       }
+       
+       ul{
+           font-size: 25px;
+           align-items: center;
+       } 
+   
+       img.roast-image {
+           max-height: 275px;
+       }
+       
+   
+       .flexbox-roast-item-2{
+           font-size: 20px;
+           margin-top:10%;
+       }
+      
+       .logo{
+           margin: auto;
+           display: flex;
+           justify-content: center;
+           left: 0px;
+       }
+   
+    
+   
+       .back-button {
+        font-size: 22px;
+    }
+}
 
 }
