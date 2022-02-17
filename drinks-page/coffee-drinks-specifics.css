@@ -6,7 +6,9 @@
 body{
     background-image: url(../images/background.jpg);
     overflow-y: hidden;
+    animation: fade 3s;
 }
+
 div.container{
     width: 100vw;
 }
@@ -127,7 +129,14 @@ a:hover{
     color: white;
 
 }
-
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+}
  @keyframes slide-right {
      0%{
         margin-left: -500px;
@@ -205,6 +214,7 @@ a:hover{
         font-size: 60px;
         width: auto;
         text-align: center;
+        animation-name:none;
     }
     
     ul{
