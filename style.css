@@ -60,7 +60,6 @@ a:hover{
     flex: 1;
 }
 
-
 .flexbox-container {
     display: flex;
     justify-content: center;
@@ -150,6 +149,15 @@ body {
  }
 @media screen and (max-width: 768px) {
 
+
+.flexbox-item{
+    margin-left:20%;
+    margin-right:20%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
 .flexbox-container {
     display:list-item;
     justify-content: center;
@@ -187,5 +195,32 @@ a{
     width: auto;
    
 
+}
+@media screen and (max-width: 480px) {
+    a{
+        font-size: 20px;
+        
+    }
+
+    .flexbox-item{
+        margin-left:none;
+        margin-right:none;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+}
+@media screen and (max-width: 480px) {
+    a{
+        font-size: 14px;
+    }
+
+    h1{
+        font-size: 70px;
+    }
+    h2{
+        font-size: 70px;
+    }
 }
 }
