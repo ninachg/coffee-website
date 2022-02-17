@@ -79,6 +79,15 @@ img.coffee-image {
 img.coffee-image:hover {
     animation-play-state: paused;
 }
+
+@keyframes none {
+    0%{
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+    }
+}
 @keyframes spacing {
     0%{
         opacity: 0;
@@ -151,12 +160,15 @@ h1{
     justify-content: center;
     margin-top: 20%;
     font-size:50px;
+    animation-name:none;
+    
 }
 .logo{
     position:relative;
     margin: auto;
     display: flex;
     justify-content: center;
+    left:0;
 }
 @media screen and (max-width: 480px) {
     h1{
